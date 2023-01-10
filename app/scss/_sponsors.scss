@@ -1,0 +1,138 @@
+.trust {
+    margin: 30px 0 0 0;
+   
+
+    // .trust__container
+
+    &__container {
+       width: 100%;
+       @media screen and (min-width: $breakpoint_md) {
+        display: flex;
+        flex-wrap: wrap;
+       }
+       @media screen and (min-width: $breakpoint_xxl) {
+        padding: 0 100px 60px;
+       }
+        
+    }
+        &__item {
+        width: 100%;
+        height: 120px;
+        @media screen and (min-width: $breakpoint_md) {
+            flex: 1 0 33.3333%;
+
+           }
+           @media screen and (min-width: $breakpoint_lg) {
+            flex: 1 0 25%;
+
+           }
+     
+
+    }
+    // .trust__item
+    &__item:first-child{
+        background: #1C4280;
+    }
+    &__item:nth-child(2){
+        background: #143646;;
+    }
+    &__item:nth-child(3){
+        background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+    }
+    &__item:nth-child(4){
+        background: #9E4DC3;
+    }
+    &__item:nth-child(5){
+        background: #FD9339;;
+    }
+    &__item:nth-child(6){
+        background: #E2E2E4;
+        
+    }
+    &__item:nth-child(7){
+        background: #C71C36;
+    }
+    &__item:nth-child(8){
+        background: #DCF3F9;
+
+    }
+    &__item:nth-child(9){
+        background: #EAEAEA;
+    }
+    &__item:nth-child(10){
+        background: #282240;
+    }
+    &__item:nth-child(11){
+        background: #1D4568;
+
+    }
+    &__item:nth-child(12){
+        background: #000000;
+    }
+    &__item:nth-child(n + 7){
+        display: none;
+        @media screen and (min-width: $breakpoint_md) {
+            display: block;
+        }
+    }
+
+    // .trust__item-link
+
+    &__item-link {
+        width: 100%;
+        height: 100%;
+        display: block;
+        
+       
+       
+    
+    }
+    &__item-link1{
+         background: url(../images/hillel.png) no-repeat center;
+        }
+        &__item-link2{
+            background: url(../images/wannabiz.png) no-repeat center;
+           } 
+           &__item-link2{
+            background: url(../images/wannabiz.png) no-repeat center;
+           }
+           &__item-link3{
+            background: url(../images/tapgerine.png) no-repeat center;
+           }
+           &__item-link4{
+            background: url(../images/retina_2.png) no-repeat center;
+
+           }
+           &__item-link5{
+            background: url(../images/frame6.png) no-repeat center;
+
+
+           }
+           &__item-link6{
+            background: url(../images/adtellige.png) no-repeat center;
+
+           }
+           &__item-link7{
+            background: url(../images/clickky7.png) no-repeat center;
+
+           }
+           &__item-link8{
+            background: url(../images/ecolease8.png) no-repeat center;
+
+           }
+           &__item-link9{
+            background: url(../images/image9.png) no-repeat center;
+           }
+           &__item-link10{
+            background: url(../images/citypark10.png) no-repeat center;
+
+           }
+           &__item-link11{
+            background: url(../images/logo11.png) no-repeat center;
+           }
+           &__item-link12{
+            background: url(../images/logoM12.png) no-repeat center;
+
+           }
+    
+}

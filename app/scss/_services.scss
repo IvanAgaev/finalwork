@@ -1,0 +1,77 @@
+.services {
+    margin: 30px auto;
+
+    @media screen and (min-width: $breakpoint_md) {
+        margin: 60px 0 0;
+    }
+
+    @media screen and (min-width: $breakpoint_lg) {
+        margin: 75px 0 0;
+    }
+
+    &__logo {
+        position: relative;
+        display: inline-block;
+        padding-right: 12px;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        .services__icon {
+            stroke: #24A3FF;
+        }
+
+        &:hover .services__logo-title {
+            color: $accent_red_colour;
+        }
+
+        &:hover .services__icon {
+            stroke: $accent_red_colour;
+        }
+    }
+
+    &__logo-title {
+        color: $active_regular_blue;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+
+
+
+    }
+
+    &__icon {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        width: 12px;
+        height: 12px;
+
+
+    }
+
+    &__offer-text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 10px 0 0;
+
+        /* Gradient / Red Text */
+
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        @media screen and (min-width: $breakpoint_md) {
+            font-weight: 700;
+font-size: 38px;
+line-height: 46px;
+        }
+
+    }
+}

@@ -1,0 +1,56 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: Montserrat;
+    font-weight: 400;
+    height: 100%;
+
+
+}
+.container{
+    padding: 0 15px;
+    @media screen and (min-width: $breakpoint_md) {
+        max-width: 648px;
+        margin: 0 auto;
+        // padding: 0 60px;
+        padding: 0;
+    }
+    @media screen and (min-width: $breakpoint_lg) {
+        max-width: 904px;
+}
+@media screen and (min-width: $breakpoint_xl) {
+    max-width: 1320px;
+    margin: 0 auto;
+} 
+@media screen and (min-width: $breakpoint_xxl) {
+    max-width: 1600px;
+    margin: 0 auto;
+    // padding: 0 160px;
+}}
+.main_title{
+    font-weight: 700;
+    font-size: 38px; 
+    line-height: 46px;
+    
+}
+.wrapper
+ {
+    background: $gradient_supersoft;
+    
+   
+}
+.hidden{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -1000;
+}
+.facebook{
+    width: 24px;
+    height: 24px;
+}
+.footer{
+    background: $grey_bg;
+}

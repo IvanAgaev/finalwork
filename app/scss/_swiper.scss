@@ -1,0 +1,186 @@
+.team {
+    padding: 0 30px;
+    @media screen and (min-width: $breakpoint_md) {
+        padding: 0 60px;
+    }
+    @media screen and (min-width: $breakpoint_xxl) {
+        padding: 0 160px;
+    }
+    
+
+    // .team__swiper
+
+  
+
+    // .team__wrapper
+
+   
+
+    // .team__slide
+
+    &__slide {
+        border-radius: 12px;
+        overflow: hidden;
+
+        @media screen and (min-width: $breakpoint_lg) {
+            display: flex;
+        }
+    }
+
+
+
+    // .team__image
+
+    &__image {
+        height: 500px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+
+        @media screen and (min-width: $breakpoint_lg) {
+            height: auto;
+            flex: 1 0 400px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+
+
+        }
+    }
+
+    // .team__inner
+
+    &__inner {
+        padding: 30px;
+        background: $grey_bg;
+
+
+    }
+    
+
+    &__inner-logo {
+        position: relative;
+        display: inline-block;
+        padding-right: 12px;
+    }
+
+    &__icon {
+        position: absolute;
+        content: '';
+        top: 2px;
+        right: 0;
+        width: 12px;
+        height: 12px;
+        stroke: #24a3ff;
+        
+    }
+
+    // .team__inner-link
+
+    &__inner-link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $active_regular_blue;
+        text-decoration: none;
+       
+            
+        }
+        &__inner-link:hover{
+            .team__icon{
+                stroke: $accent_red_colour;
+            }
+            .team__inner-linktxt{
+                color: $accent_red_colour;
+            }
+        }
+       
+       
+    
+
+    // .team__inner-title
+
+    &__inner-title {
+        word-wrap: break-word;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: transparent;
+        background: $gradient_redtext;
+        background-clip: text;
+        margin: 0 0 30px;
+    }
+
+    // .team__inner-name
+
+    &__inner-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey_text;
+
+        p {
+            margin: 0 0 6px;
+        }
+
+        p+p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    &__recommendation {
+        margin: 106px auto 30px;
+        text-align: center;
+
+    }
+    &__recommendationservices {
+        margin: 80px auto 30px;
+    }
+
+    &__recommendation-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $main-colour;
+        letter-spacing: 1px;
+
+
+    }
+
+    &__swiper--container {
+        position: relative;
+
+
+    }
+
+    &__swiper-pagination {
+        &.swiper-pagination {
+            bottom: -30px;
+            transform: translateY(50%);
+
+        }
+
+        .swiper-pagination-bullet {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+}
+

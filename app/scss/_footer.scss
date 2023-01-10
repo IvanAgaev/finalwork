@@ -1,0 +1,212 @@
+.footer {
+    padding: 30px 30px 30px;
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint_md) {
+        padding: 60px 60px 30px;
+       
+       
+    }
+
+    @media screen and (min-width: $breakpoint_xxl) {
+        padding: 60px 160px 30px;
+    }
+
+    // .footer__hr
+
+    &__hr {
+        border: none;
+        width: 100%;
+        height: 2px;
+        background: $grey_separator;
+        margin: 0 0 30px;
+    }
+    &__flex{
+        @media screen and (min-width: $breakpoint_md) {
+            display: flex;
+            justify-content: space-between;
+           
+           
+        }
+    }
+    &__flexservices{
+        @media screen and (min-width: $breakpoint_lg) {
+            display: flex;
+            justify-content: space-between;
+           
+           
+        }
+    }
+    &__list{
+        @media screen and (min-width: $breakpoint_md){
+        display: flex;
+        column-gap: 26px;
+        row-gap: 21px;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 440px;
+        justify-content: center;
+        margin: 0 auto;
+        }
+        @media screen and (min-width: $breakpoint_lg){
+            margin: 0 0;
+            
+            }
+    }
+    &__item{
+        
+        position: relative;
+        @media screen and (min-width: $breakpoint_md) {
+            display: inline-block;
+            ::before{
+                position: absolute;
+                content: '';
+                top: 50%;
+                right: -16px;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $grey_text;
+            }
+        }
+      
+        &:first-child{
+            margin: 0 0 10px;
+            
+            @media screen and (min-width: $breakpoint_md){
+                margin: 0 0 0;
+               
+            }
+        }
+        &:nth-child(2){
+            margin: 0 0 21px;
+           
+            @media screen and (min-width: $breakpoint_md){
+                margin: 0 0 0;
+                padding-right: 100px;
+                ::before{
+                    display: none;
+                }
+            }
+        }
+        &:nth-child(3){
+            margin: 0 0 10px;
+            @media screen and (min-width: $breakpoint_md){
+                margin: 0 0 0;
+                
+              
+            }
+        }
+        &:nth-child(4){
+            @media screen and (min-width: $breakpoint_md){
+                margin: 0 0 0;
+              
+            }
+        }
+        &:nth-child(5){
+            margin: 0 0 30px;
+            @media screen and (min-width: $breakpoint_md){
+                margin: 0 0 0;
+                ::before{
+                    display: none;
+                }
+                
+            }
+        }
+        
+
+    }
+
+    // .footer__adress
+
+    &__adress {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $main-colour;
+        text-decoration: none;
+        // margin: 0 0 10px;
+        display: block;
+        &:hover{
+            color: $accent_red_colour;
+        }
+    }
+
+    // .footer__onmap
+
+    &__onmap {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $active_regular_blue;
+        text-decoration: none;
+        display: block;
+        &:hover{
+            color: $accent_red_colour;
+        }
+    }
+
+    // .footer__icon
+
+    &__icon {
+        width: 38px;
+        height: 38px;
+        margin: 0 0 10px;
+        @media screen and (min-width: $breakpoint_md) {
+            margin: 0 0 0;
+        }
+        
+    }
+
+    // .footer__phone
+
+    &__phone {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $main_alt_colour;
+        text-decoration: none;
+        margin: 0 0 10px;
+        display: block;
+        &:hover{
+            color: $accent_red_colour;
+        }
+        @media screen and (min-width: $breakpoint_md) {
+            margin: 0 0 0;
+        }
+    }
+
+    // .footer__mail
+
+    &__mail {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $active_regular_blue;
+        text-decoration: none;
+        display: block;
+        &:hover{
+            color: $accent_red_colour;
+        }
+        // margin: 0 0 30px;
+    }
+
+    // .footer__text
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey_text;
+    }
+    &__textservices{
+        margin: 30px 0 0 0;
+    }
+    &__link{
+        display: block;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,195 @@
+.publications {
+    padding: 0 30px 0;
+    background: $grey_bg;
+
+    @media screen and (min-width: $breakpoint_md) {
+        padding: 0 60px 0;
+    }
+
+    @media screen and (min-width: $breakpoint_xxl) {
+        padding: 0 160px 0;
+    }
+
+    // .publications__title
+
+    &__title {
+        padding: 30px 0 0;
+    }
+
+    // .publications__title-link
+    &__parentarrow {
+        position: relative;
+        display: inline-block;
+        padding-right: 12px;
+        stroke: $active_regular_blue;
+        margin-bottom: 5px;
+
+        @media screen and (min-width: $breakpoint_md) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__title-link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $active_regular_blue;
+        text-decoration: none;
+        &:hover .publications__title-linktxt{
+            color: $accent_red_colour;
+        }
+        &:hover .publications__icon{
+            stroke: $accent_red_colour;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        width: 12px;
+        height: 12px;
+    }
+
+    // .publications__title-title
+
+    &__title-title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+
+        /* Gradient / Red Text */
+
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+        margin: 0 0 30px;
+
+    }
+
+    // .publications__flex
+
+    &__flex {
+        display: flex;
+        flex-flow: column;
+        gap: 30px;
+        
+        @media screen and (min-width: $breakpoint_md) {
+            display: flex;
+            column-gap: 30px;
+            flex-flow: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    // .publications__flex1
+
+    &__flex1 {
+       
+        background: #ffffff;
+        border-radius: 8px;
+        padding-bottom: 30px;
+        @media screen and (min-width: $breakpoint_md) {
+            flex: 1 0 25%;
+        }
+        @media screen and (min-width: $breakpoint_lg) {
+            flex: 1 0 31%;
+        }
+    }
+
+    // .publications__flex1-image
+
+    &__flex1-image {
+        border-radius: 8px 8px 0px 0px;
+        margin-bottom: 30px;
+        height: 200px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+    
+        }
+    } 
+    &__txtcontainer{
+        padding: 0 30px;
+       
+        
+    }
+
+    // .publications__flex1-title
+
+    &__flex1-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $active_regular_blue;
+        margin: 0 0 15px;
+    }
+
+    // .publications__flex1-date
+
+    &__flex1-date {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 0 0 15px;
+        color: $grey_text;
+
+    }
+
+    // .publications__flex1-hr
+
+    &__flex1-hr {
+        border: none;
+        width: 100%;
+        height: 4px;
+        background: $grey_separator;
+    }
+
+    // .publications__flex1-txt
+
+    &__flex1-txt {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    // .publications__flex2
+
+    &__flex2 { 
+        background: #ffffff;
+        border-radius: 8px;
+        padding-bottom: 30px;
+        @media screen and (min-width: $breakpoint_md) {
+            flex: 1 0 25%;
+        }
+        @media screen and (min-width: $breakpoint_lg) {
+            flex: 1 0 31%;
+        }
+    }
+
+    // .publications__flex3
+
+    &__flex3 {
+        background: #ffffff;
+        border-radius: 8px;
+        padding-bottom: 30px;
+        
+        @media screen and (min-width: $breakpoint_md) {
+            flex: 1 0 50%;
+        }
+        @media screen and (min-width: $breakpoint_lg) {
+            flex: 1 0 31%;
+        }
+    }
+}

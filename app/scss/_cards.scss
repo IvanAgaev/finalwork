@@ -1,0 +1,109 @@
+.cards {
+
+    &__list {
+        @media screen and (min-width: $breakpoint_md) {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 60px;
+            padding: 0 0 60px;
+        }
+    }
+
+    // .cards__item
+
+    &__item {
+        flex: 1 1 45%;
+
+        @media screen and (min-width: $breakpoint_md) {
+            flex: 1 1 28%;
+        }
+    }
+
+    // .cards__icon
+
+    &__icon {
+        width: 96px;
+        height: 96px;
+        display: block;
+        margin: 30px 0 30px;
+
+        @media screen and (min-width: $breakpoint_md) {
+            margin: 60px 0 30px;
+        }
+    }
+
+    // .cards__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: $active_regular_blue;
+        margin: 0 0 15px;
+    }
+
+    // .cards__maintext
+
+    &__maintext {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #ffffff;
+    }
+}
+
+.pseudoelement {
+    position: relative;
+    margin: 0 0 50px;
+    @media screen and (min-width: $breakpoint_md) {
+       margin: 0 0 80px; 
+    }
+
+    &__firstline {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 335px;
+        height: 10px;
+        background: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+        @media  screen and (min-width: $breakpoint_md) {
+            width: 728px;
+        }
+        @media  screen and (min-width: $breakpoint_lg) {
+            width: 984px;
+        }
+        @media  screen and (min-width: $breakpoint_xl) {
+            width: 1400px;
+        }
+        @media  screen and (min-width: $breakpoint_xxl) {
+            width: 1880px;
+        }
+    }
+    &__firstline::before{
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 295px;
+        height: 10px;
+        background: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+        @media  screen and (min-width: $breakpoint_md) {
+            width: 688px;
+        }
+        @media  screen and (min-width: $breakpoint_lg) {
+            width: 944px;
+        }
+        @media  screen and (min-width: $breakpoint_xl) {
+            width: 1360px;
+        }
+        @media  screen and (min-width: $breakpoint_xxl) {
+            width: 1840px;
+        }
+       
+    }
+}
