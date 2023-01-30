@@ -269,4 +269,17 @@
         display: block;
         text-decoration: none;
     }
+   
+}
+.footer__aboutus{
+    padding: 30px 0 30px;
+    @media screen and (min-width: $breakpoint_md) {
+        padding: 30px 0 30px;
+       
+       
+    }
+
+    @media screen and (min-width: $breakpoint_xxl) {
+        padding: 30px 0 30px;
+    }
 }

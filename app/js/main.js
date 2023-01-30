@@ -1,3 +1,4 @@
+
 (function(){
 const headerBurgerBtn = document.querySelector('.header__burger');
 const headerNavigation = document.querySelector('.header__nav');
@@ -11,8 +12,8 @@ headerBurgerBtn.addEventListener('click', a =>{
     })
 })(); 
 
-const swiper = new Swiper('.swiper', {
-  spaceBetween: 80,
+const swiper = new Swiper('.team__swiper', {
+  spaceBetween: 40,
 
     pagination: {
       el: '.swiper-pagination',
@@ -24,7 +25,26 @@ const swiper = new Swiper('.swiper', {
     grabCursor: true,
    effect: "coverflow"
 
-  });
+  }); 
+  const swipe = new Swiper('.achievements__swiper', {
+    spaceBetween: 40,
+  
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        
+        
+       
+      },
+      grabCursor: true,
+     breakpoints: {
+      
+      768: {
+        slidesPerView: 4,
+      },
+     },
+  
+    }); 
   (function() {
     const tabsItem = document.querySelectorAll('.tabs__link');
     const tabsContent = document.querySelectorAll('.tabs__section-item');

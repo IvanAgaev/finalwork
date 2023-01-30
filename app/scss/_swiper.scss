@@ -21,6 +21,7 @@
     &__slide {
         border-radius: 12px;
         overflow: hidden;
+        
 
         @media screen and (min-width: $breakpoint_lg) {
             display: flex;
@@ -183,4 +184,156 @@
     }
 
 }
+
+.achievements {
+    position: relative;
+    padding: 0 30px;
+    margin: 0 auto;
+
+    // .achievements_swiper--wrapper
+
+    &_swiper--wrapper {
+    }
+
+    // .achievements__heading
+
+    &__heading {
+        font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+
+/* Main / Regular */
+
+color: #323264;
+margin: 0 0 30px;
+
+    }
+
+    // .achievements__swiper
+
+    &__swiper {
+    }
+
+    // .achievements__slide
+
+    &__slide {
+        border-radius:12px;
+        width: 255px;
+        height: 90px;
+        background: #FFFFFF;
+        overflow: hidden;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        @media screen and (min-width: $breakpoint_lg) {
+            height: 110px;
+        }
+        &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url(../images/achievment-1.png) no-repeat center;
+        
+        }
+       
+       
+       
+    }
+    &__slide2{
+        &::before{
+            display: none;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(../images/Achievment-2.png) no-repeat center ;
+            @media screen and (min-width: $breakpoint_md) {
+                background-size: 106px 40px;  
+            }
+            @media screen and (min-width: $breakpoint_lg) {
+                background-size: 159px 60px;  
+            }
+           
+            } 
+    }
+    &__slide3{
+        &::before{
+            display: none;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(../images/Achievment-3.png) no-repeat center ;
+            @media screen and (min-width: $breakpoint_md) {
+                background-size: 130px 40px;  
+            }
+            @media screen and (min-width: $breakpoint_lg) {
+                background-size: 195px 60px;  
+            }
+    
+            } 
+    }
+    &__slide4{
+        &::before{
+            display: none;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(../images/Achievment-4.png) no-repeat center ;
+            @media screen and (min-width: $breakpoint_md) {
+                background-size: 110px 40px;  
+            }
+            @media screen and (min-width: $breakpoint_lg) {
+                background-size: 166px 60px;  
+            }
+            } 
+    }
+
+
+    // .achievements__image
+
+    
+
+    // .achievements__pagination
+
+    &__pagination {
+        &.swiper-pagination{
+            bottom: -30px;
+        }
+        .swiper-pagination-bullet {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+
 

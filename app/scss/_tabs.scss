@@ -5,6 +5,7 @@
         // padding: 0 60px;
         margin: 60px auto;
     } 
+    
     @media screen and (min-width: $breakpoint_xxl) {
         // padding: 0 160px;
         margin: 60px auto;
@@ -25,25 +26,15 @@
             margin: 0 auto;
                 display: flex;
                 margin: 60px auto 0;
-                column-gap: 124px;
                 align-items: stretch;
                 position: relative;
                 padding: 0;
-                &::before{
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 4px;
-                    height: 100%;
-                    background: rgba(255, 255, 255, 0.3);
-        
-                }
+                
 
     }
     @media screen and (min-width: $breakpoint_xl) {
         max-width: 1320px;
+        padding: 0 120px;
 
        
     } 
@@ -75,11 +66,13 @@
         @media screen and (min-width: $breakpoint_lg) {
             margin-right: auto;
             flex-flow: column;
-            flex: 1 0 48%;
-            align-items: center;
+            align-items: flex-end;
             gap: 30px;
             overflow: hidden; 
             column-gap: 0;
+            border-right: 4px solid rgba(255, 255, 255, 0.3);
+            padding-right: 60px;
+            ;
 
         
             
@@ -143,6 +136,16 @@
         @media screen and (min-width: $breakpoint_xl) {
             align-self: center;
         }
+        @media screen and (min-width: $breakpoint_lg) {
+            padding-left: 60px;
+            flex: 1 0 405px;
+        }
+        @media screen and (min-width: $breakpoint_xl) {
+            flex: 1 0 581px;
+        }
+        @media screen and (min-width: $breakpoint_xxl) {
+            flex: 1 0 861px;
+        }
         
     }
 
@@ -150,9 +153,11 @@
 
     &__section-item {
         display: none;
+       
         
         &.active{
             display: block;
+           
         }
     }
 
