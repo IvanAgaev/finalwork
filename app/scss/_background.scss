@@ -126,7 +126,11 @@
 }
 .quality{
     padding: 0 30px;
-    @media screen and (min-width: $breakpoint_md) {
+    @media screen and (min-width: $breakpoint_xl) {
        padding: 0 120px;
     }
+}
+.greybgforswiper{
+   background: rgba(245, 245, 250, 1);
+   padding: 30px 0 46px;
 }

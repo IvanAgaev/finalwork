@@ -186,7 +186,7 @@
 }
 
 .achievements {
-    position: relative;
+    
     padding: 0 30px;
     margin: 0 auto;
 
@@ -217,6 +217,10 @@ margin: 0 0 30px;
     // .achievements__swiper
 
     &__swiper {
+       
+    }
+    &__parentbullet {
+        position: relative;
     }
 
     // .achievements__slide
@@ -320,6 +324,9 @@ margin: 0 0 30px;
     &__pagination {
         &.swiper-pagination{
             bottom: -30px;
+            transform: translateY(16px);
+
+            
         }
         .swiper-pagination-bullet {
             width: 16px;
