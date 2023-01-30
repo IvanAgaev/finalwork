@@ -10,6 +10,7 @@ headerBurgerBtn.addEventListener('click', a =>{
 
     })
 })(); 
+
 const swiper = new Swiper('.swiper', {
   spaceBetween: 80,
 
@@ -47,3 +48,12 @@ const swiper = new Swiper('.swiper', {
   const snowFlakes = new Snowflakes({
     container: document.querySelector('.wrapper')
   });
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

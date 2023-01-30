@@ -9,6 +9,8 @@
         margin: 75px 0 0;
     }
 
+    &__offer-aboutus {}
+
     &__logo {
         position: relative;
         display: inline-block;
@@ -59,7 +61,7 @@
         font-weight: 700;
         font-size: 30px;
         line-height: 37px;
-        margin: 10px 0 0;
+
 
         /* Gradient / Red Text */
 
@@ -67,11 +69,137 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+
         @media screen and (min-width: $breakpoint_md) {
             font-weight: 700;
-font-size: 38px;
-line-height: 46px;
+            font-size: 38px;
+            line-height: 46px;
         }
 
+    }
+
+    &__maintext {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+        margin: 30px 0 20px;
+
+        @media screen and (min-width: $breakpoint_md) {
+            margin: 30px 0 20px;
+        }
+
+
+    }
+
+    &__maintext2 {
+        @media screen and (min-width: $breakpoint_md) {
+            margin: 0 0 30px;
+        }
+    }
+}
+
+.stats {
+    border-left: 4px solid $grey_separator;
+    padding-left: 30px;
+
+    @media screen and (min-width: $breakpoint_lg) {
+        border: none;
+        padding-left: 0;
+    }
+
+    // .stats__list
+
+    &__list {
+        @media screen and (min-width: $breakpoint_lg) {
+            margin: 60px 0 0;
+            padding-left: 30px;
+            border-left: 4px solid $grey_separator;
+        }
+    }
+
+    // .stats__item
+
+    &__item {
+        margin-bottom: 40px;
+
+
+        &:last-child {
+            margin: 0 0 30px;
+        }
+    }
+
+    // .stats__numbers
+
+    &__numbers {
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-left: 40px;
+
+
+    }
+
+    // .stats__numberstext
+
+    &__numberstext {
+        margin: 10px 0 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #323264;
+
+    }
+
+    &__icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 32px;
+        width: 32px;
+    }
+
+    &__firstline {
+        position: relative;
+    }
+
+}
+
+.services-stats {
+    @media screen and (min-width: $breakpoint_lg) {
+        display: flex;
+
+
+
+
+    }
+
+    @media screen and (min-width: $breakpoint_xl) {
+        padding: 0 120px;
+    }
+}
+
+.services-aboutus {
+    @media screen and (min-width: $breakpoint_lg) {
+        margin: 60px 0 0;
+        margin-right: 30px;
+        flex: 1 0 449px;
+
+
+
+    }
+
+    @media screen and (min-width: $breakpoint_xl) {
+        flex: 1 0 662px;
+    }
+
+    @media screen and (min-width: $breakpoint_xxl) {
+        flex: 1 0 942px;
     }
 }

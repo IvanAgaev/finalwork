@@ -1,0 +1,126 @@
+.background {
+    height: 114px;
+    background: url(../images/bg_gradientt.jpg) no-repeat center/cover;
+    position: relative;
+    margin: 0 0 30px;
+
+    @media screen and (min-width: $breakpoint_md) {
+        height: 233.6px;
+    }
+
+    @media screen and (min-width: $breakpoint_lg) {
+        height: 311.47px;
+    }
+
+    @media screen and (min-width: $breakpoint_xl) {
+        height: 438px;
+    }
+
+    @media screen and (min-width: $breakpoint_xxl) {
+        height: 584px;
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 13px;
+        text-transform: uppercase;
+
+        /* Basic/White */
+
+        color: #FFFFFF;
+
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+
+        @media screen and (min-width: $breakpoint_md) {
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 56px;
+            letter-spacing: 63px;
+        }
+
+        @media screen and (min-width: $breakpoint_lg) {
+            font-weight: 700;
+            font-size: 86px;
+            line-height: 105px;
+            letter-spacing: 63px;
+        }
+
+        @media screen and (min-width: $breakpoint_xl) {
+            font-size: 96px;
+            line-height: 117px;
+            letter-spacing: 63px;
+        }
+
+        @media screen and (min-width: $breakpoint_xxl) {
+            font-size: 96px;
+            line-height: 117px;
+            letter-spacing: 63px;
+        }
+
+
+    }
+}
+
+.quality {
+    @media screen and (min-width: $breakpoint_lg) {
+        display: flex;
+        column-gap: 60px;
+    }
+
+    // .quality__text
+
+    &__text {
+        margin: 0 0 20px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+
+    }
+
+    &__text2 {
+        margin: 0 0 30px;
+    }
+
+    // .quality__heading
+
+    &__heading {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+
+        /* Gradient / Red Text */
+
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+        @media screen and (min-width: $breakpoint_md) {
+            font-size: 38px;
+            line-height: 46px;
+        }
+       
+    }
+    &__flextext{
+        @media screen and (min-width: $breakpoint_lg) {
+            flex: 1 0 482px;
+        }
+        @media screen and (min-width: $breakpoint_xl) {
+            flex: 1 0 658px;
+        }
+        @media screen and (min-width: $breakpoint_xxl) {
+            flex: 1 0 938px;
+        }
+    }
+}

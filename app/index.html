@@ -12,6 +12,7 @@
 <body>
 	<div class="main-wrapper">
 		<header>
+			<div class="wrapperabsolute">
 			<div class="wrapper">
 				<div class="header">
 					<div class="container header__container">
@@ -47,7 +48,7 @@
 									<div class="header__nav-close"></div>
 									<ul class="header__nav-list">
 										<li class="header__list-item">
-											<a href="#" class="header__list-link">about us</a>
+											<a href="index/aboutus.html" class="header__list-link">about us</a>
 										</li>
 										<li class="header__list-item">
 											<a href="index/index.html" class="header__list-link">services</a>
@@ -59,7 +60,7 @@
 											<a href="#" class="header__list-link">publications</a>
 										</li>
 										<li class="header__list-item">
-											<a href="#" class="header__list-link">contact</a>
+											<a href="index/forms.html" class="header__list-link">contact</a>
 										</li>
 
 									</ul>
@@ -129,7 +130,7 @@
 					<div class="services">
 						<div class="services__logo">
 							<a href="#" class="services__link">
-								<span class="services__logo-title">services</span>
+								<span id="services" class="services__logo-title">services</span>
 								<svg class="services__icon">
 									<use xlink:href="sprite.svg#vector"></use>
 								</svg>
@@ -204,10 +205,8 @@
 							</li>
 						</ul>
 					</div>
-					<section class="pseudoelement">
-						<span class="pseudoelement__firstline"></span>
-					</section>
 				</div>
+			</div>
 			</div>
 		</header>
 		<main>
@@ -383,17 +382,23 @@
 			<div class="footer__flex">
 			<ul class="footer__list">
 				<li class="footer__item"><a href="#" class="footer__adress">Kyiv, Mechnikova str., 14/1</a></li>
-				<li class="footer__item"><a href="" class="footer__onmap">ON MAP</a></li>
-				<li class="footer__item"><a href="#" class="footer__link"> <svg class="footer__icon">
+				<li class="footer__item footer__item-block"><a href="" class="footer__onmap">ON MAP</a></li>
+				</ul>
+				
+			<p class="footer__text ">© 2021 HLEGAL Law company, LLC</p>
+			</div>
+			<div class="footer__block">
+				<ul class="footer__list">
+				<li class="footer__item footer__item2"><a href="#" class="footer__link"> <svg class="footer__icon">
 							<use xlink:href="#FACEB"></use>
 						</svg>
 					</a></li>
-				<li class="footer__item"><a href="#" class="footer__phone">0800 211 927</a> </li>
-				<li class="footer__item"><a href="#" class="footer__mail">contact@forstudy.space</a></li>
+				<li class="footer__item footer__item2"><a href="#" class="footer__phone">0800 211 927</a> </li>
+				<li class="footer__item footer__item2"><a href="#" class="footer__mail">contact@forstudy.space</a></li>
 			</ul>
-			<p class="footer__text ">© 2021 HLEGAL Law company, LLC</p>
 			</div>
-			</div>
+			
+				</div>
 			
 		</footer>
 	</div>

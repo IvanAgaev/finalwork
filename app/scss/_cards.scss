@@ -52,58 +52,57 @@
     }
 }
 
-.pseudoelement {
-    position: relative;
-    margin: 0 0 50px;
-    @media screen and (min-width: $breakpoint_md) {
-       margin: 0 0 80px; 
-    }
+// .pseudoelement {
+    // position: relative;
+    // margin: 0 0 50px;
+    // @media screen and (min-width: $breakpoint_md) {
+    //    margin: 0 0 80px; 
+    // }
 
-    &__firstline {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 335px;
-        height: 10px;
-        background: #CACADB;
-        border-radius: 0px 0px 12px 12px;
-        @media  screen and (min-width: $breakpoint_md) {
-            width: 728px;
-        }
-        @media  screen and (min-width: $breakpoint_lg) {
-            width: 984px;
-        }
-        @media  screen and (min-width: $breakpoint_xl) {
-            width: 1400px;
-        }
-        @media  screen and (min-width: $breakpoint_xxl) {
-            width: 1880px;
-        }
-    }
-    &__firstline::before{
-        position: absolute;
-        content: '';
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 295px;
-        height: 10px;
-        background: #E7E7F2;
-        border-radius: 0px 0px 12px 12px;
-        @media  screen and (min-width: $breakpoint_md) {
-            width: 688px;
-        }
-        @media  screen and (min-width: $breakpoint_lg) {
-            width: 944px;
-        }
-        @media  screen and (min-width: $breakpoint_xl) {
-            width: 1360px;
-        }
-        @media  screen and (min-width: $breakpoint_xxl) {
-            width: 1840px;
-        }
+    // &__firstline {
+    //     position: absolute;
+    //     content: '';
+    //     top: 0;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     width: 335px;
+    //     height: 10px;
+    //     background: #CACADB;
+    //     border-radius: 0px 0px 12px 12px;
+    //     @media  screen and (min-width: $breakpoint_md) {
+    //         width: 728px;
+    //     }
+    //     @media  screen and (min-width: $breakpoint_lg) {
+    //         width: 984px;
+    //     }
+    //     @media  screen and (min-width: $breakpoint_xl) {
+    //         width: 1400px;
+    //     }
+    //     @media  screen and (min-width: $breakpoint_xxl) {
+    //         width: 1880px;
+    //     }
+    // }
+    // &__firstline::before{
+    //     position: absolute;
+    //     content: '';
+    //     top: 10px;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     width: 295px;
+    //     height: 10px;
+    //     background: #E7E7F2;
+    //     border-radius: 0px 0px 12px 12px;
+    //     @media  screen and (min-width: $breakpoint_md) {
+    //         width: 688px;
+    //     }
+    //     @media  screen and (min-width: $breakpoint_lg) {
+    //         width: 944px;
+    //     }
+    //     @media  screen and (min-width: $breakpoint_xl) {
+    //         width: 1360px;
+    //     }
+    //     @media  screen and (min-width: $breakpoint_xxl) {
+    //         width: 1840px;
+    //     }
        
-    }
-}
+    // }
