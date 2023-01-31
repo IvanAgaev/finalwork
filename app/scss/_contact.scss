@@ -1,6 +1,5 @@
 .contactinfo {
     // margin: 0 auto;
-    padding: 0 15px;
     margin: 0 0 30px;
 
     @media screen and (min-width: $breakpoint_md) {
@@ -93,6 +92,9 @@
         font-weight: 400;
         font-size: 21px;
         line-height: 30px;
+        &:hover{
+            color: $accent_red_colour;
+        }
     }
 }
 .contactinfo_link:hover .contactinfo_icon{

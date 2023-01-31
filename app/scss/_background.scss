@@ -90,6 +90,7 @@
 
     &__text2 {
         margin: 0 0 30px;
+       
     }
 
     // .quality__heading
@@ -126,9 +127,23 @@
 }
 .quality{
     padding: 0 30px;
+    margin: 0 auto 60px;
+    @media screen and (min-width: $breakpoint_md) {
+        padding: 0;
+        margin: 60px auto;
+     }
+     @media screen and (min-width: $breakpoint_lg) {
+        
+        margin: 60px auto;
+     }
     @media screen and (min-width: $breakpoint_xl) {
        padding: 0 120px;
+       margin: 60px auto;
     }
+    @media screen and (min-width: $breakpoint_xxl) {
+       
+        margin: 60px auto;
+     }
 }
 .greybgforswiper{
    background: rgba(245, 245, 250, 1);

@@ -21,6 +21,9 @@
         background: $grey_separator;
         margin: 0 0 30px;
     }
+    &__hr--cont{
+        padding: 0 30px;
+    }
     &__flex{
         @media screen and (min-width: $breakpoint_md) {
             display: flex;
@@ -30,11 +33,21 @@
         }
     }
     &__flexservices{
+        padding: 0;
+        @media screen and (min-width:$breakpoint_md) {
+            padding: 0;
+        }
         @media screen and (min-width: $breakpoint_lg) {
             display: flex;
             justify-content: space-between;
            
            
+        }
+    }
+    &__pd{
+        padding: 0 30px;
+        @media screen and (min-width:$breakpoint_md) {
+            padding: 0;
         }
     }
     &__list{
@@ -215,6 +228,9 @@
         height: 38px;
         margin: 0 0 10px;
         fill: $active_regular_blue;
+        &:hover{
+            fill: $accent_red_colour;
+        }
         @media screen and (min-width: $breakpoint_md) {
             margin: 0 0 0;
         }
@@ -268,6 +284,13 @@
     &__link{
         display: block;
         text-decoration: none;
+    }
+    &__hrr{
+        border: none;
+        height: 4px;
+        width: 100%;
+        background: $grey_separator;
+        margin-bottom: 30px;
     }
    
 }

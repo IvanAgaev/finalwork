@@ -73,6 +73,7 @@
         padding: 15px;
         height: 130px;
         margin: 0 0 30px;
+        resize: none;
     }
 
     // .form__question
@@ -153,17 +154,26 @@
 .main{
     margin: 30px auto;
     @media screen and (min-width: $breakpoint_md) {
-        margin: 60px auto
+        margin: 60px auto;
     }
     @media screen and (min-width: $breakpoint_lg) {
         display: flex;
         column-gap: 60px;
         justify-content: center;
+        margin: 60px auto;
        
     }
     @media screen and (min-width: $breakpoint_xl) {
        padding: 0 120px;
+       margin: 60px auto;
        
     }
 
+}
+.container__forms{
+    padding: 0 30px;
+    @media screen and (min-width: $breakpoint_md) {
+     padding: 0;
+  
+    }
 }
