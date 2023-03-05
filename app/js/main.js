@@ -61,13 +61,11 @@ const swiper = new Swiper('.team__swiper', {
        tabsItem[index].classList.add('active');
        tabsContent [index].classList.add('active');
       })
-    })
+    }) 
       
 
   })();
-  const snowFlakes = new Snowflakes({
-    container: document.querySelector('.wrapper')
-  });
+  
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -77,3 +75,43 @@ const swiper = new Swiper('.team__swiper', {
         });
     });
 });
+(function () {
+const langItem = document.querySelectorAll('.header__lang-item');
+ langItem.forEach((el, index) => {
+  el.classList.remove('active');
+ 
+  
+  if (el.getAttribute('language') === localStorage.getItem('lang')) {
+    el.classList.add('active');
+      } 
+      if (localStorage.getItem('lang') === null) {
+      localStorage.setItem('lang', 'EN');
+      }
+ 
+  
+
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+    langItem.forEach((el)=>{
+      el.classList.remove('active');
+
+    })
+    el.classList.add('active');
+    const attr = el.getAttribute('language');
+    localStorage.setItem('lang', attr);
+  });
+  
+});
+}) ();
+
+
+
+
+
+
+
+
+
+
+
+
